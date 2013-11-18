@@ -1,0 +1,7 @@
+#!/bin/sh
+rm -f lastlogs/*
+mv logs/*.log* lastlogs
+
+forever start -l /home/ec2-user/website/logs/forever.log -a  -e /home/ec2-user/website/logs/err.log app.js
+
+tail -f /home/ec2-user/website/logs/forever.log
