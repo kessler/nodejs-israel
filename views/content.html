@@ -1,0 +1,48 @@
+<style>
+	li {
+		margin-bottom: 1em;
+	}
+</style>
+<div id="content_div">
+	<form action="http://yanush.dyndns.org:3000/register" method="post" target="_blank">
+		<ul style="list-style-type: none;">
+			<li>* First name:<br /><input type="text" name="firstname" size="30" /></li>
+			<li>* Last name:<br /><input type="text" name="lastname" size="30" /></li>
+			<li>* Email:<br /><input type="text" name="email" size="30" /></li>
+			<li>Company:<br /><input type="text" name="company" size="30" /></li>			
+			<li>Position:<br /><input type="text" name="position" size="30" /></li>			
+			<li><input type="submit" name="ok" value="submit" /></li>
+		</ul>		
+	</form>
+</div>
+
+<script type="text/javascript">
+// function makeCachedRequest(url, callback, params, refreshInterval) {
+// 	var ts = new Date().getTime();
+// 	var sep = "?";
+	
+// 	// if (refreshInterval && refreshInterval > 0) {
+// 	// 	ts = Math.floor(ts / (refreshInterval * 1000));
+// 	// }
+
+// 	if (url.indexOf("?") > -1) {
+// 		sep = "&";
+// 	}
+		
+// 	url = [ url, sep, "nocache=", ts ].join("");
+
+// 	gadgets.io.makeRequest(url, callback, params);
+// }
+
+function start() {
+	
+	// setInterval(function () {
+	// 	makeCachedRequest('http://yanush.dyndns.org:3000/content', )
+	// }, 5000);	
+
+
+}
+
+gadgets.util.registerOnLoadHandler(start);
+
+</script>
