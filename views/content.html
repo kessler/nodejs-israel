@@ -2,9 +2,16 @@
 	li {
 		margin-bottom: 1em;
 	}
+
+	div#content {
+		background-image: url('/public/images/bg.png')!important;
+		background-position: left top!important;
+		background-repeat: repeat!important;
+	}
 </style>
-<div id="content_div">
-	<form action="http://yanush.dyndns.org:3000/register" method="post" target="_blank">
+
+<div id="content_div" style="background">
+	<form action="http://nodejs-israel-2036816847.us-east-1.elb.amazonaws.com/register" method="post" target="_blank">
 		<ul style="list-style-type: none;">
 			<li>* First name:<br /><input type="text" name="firstname" size="30" /></li>
 			<li>* Last name:<br /><input type="text" name="lastname" size="30" /></li>
